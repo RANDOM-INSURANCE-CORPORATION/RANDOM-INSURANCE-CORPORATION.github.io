@@ -1,0 +1,17 @@
+.btn
+{
+	color: primary;
+}
+
+.body
+{
+	background-color: aliceblue;
+}
+
+.flight:hover
+{
+	background:#fff;
+	color: #000;
+	transition: 0.5s;
+}
+

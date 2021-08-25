@@ -1,0 +1,64 @@
+.appForm {
+    width: 900px;
+    margin: 0 auto;
+    border-bottom: 2px solid #2692D0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 5px 5px;
+}
+
+
+form {
+    padding: 10px 20px;
+}
+
+.head{
+    background-color: #2692D0;
+    padding: 10px 12px;
+    text-align: center;
+    height: 60px;
+    color: #f3f3f3;
+    border-radius: 0 0 5px 5px;
+}
+
+.head h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+label {
+    font-size: 20px;
+}
+
+input[type=text], select , input[type=number] , input[type=email] , textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+    width: 500px;
+    border-radius: 4px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.sub{
+    text-align: center;
+    padding: 10px 15px;
+}
+
+input[type=submit]{
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #f3f3f3;
+    background-color: #2692D0;
+    border-color: #2692D0;
+    border-radius: 4px;
+    cursor: pointer;
+}

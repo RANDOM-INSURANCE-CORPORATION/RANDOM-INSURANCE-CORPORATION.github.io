@@ -1,0 +1,17 @@
+.btn
+{
+	color: primary;
+}
+
+.fa-check-circle
+{
+	color: limegreen;
+}
+.list-group{
+	color: grey;
+}
+
+.card-text
+{
+	font-style: italic;
+}

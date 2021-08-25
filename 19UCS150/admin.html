@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+	<title>Admin Panel</title>
+	<link rel="stylesheet" href="css/styles.css">
+  <link rel = "icon" href = 
+"https://img.icons8.com/ios/100/000000/microsoft-admin.png" 
+        type = "image/x-icon">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="js/click.js"></script>
+ 
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+      <div>
+      <img  id="heart"src="https://img.icons8.com/color/96/000000/heart-health.png"/>
+    </div>  
+      <ul>
+            <li><a href="#Dashboard"  id='btdashboard' value='Show Layer' onclick="setVisibility('Dashboard','btdashboard');"><i class="fas fa-home"></i>Dashboard</a></li>
+            <li><a href="#Client"  id='btclient' value='Show Layer' onclick="setVisibility('Client','btclient');"><i class="fas fa-user"></i>Client</a></li>
+            <li><a href="#Addclient"  id='btaddclient' value='Show Layer' onclick="setVisibility('Addclient','btaddclient');"><i class="fas fa-users"></i>Add Client</a></li>
+            <li><a href="#Agents"  id='btagents' value='Show Layer' onclick="setVisibility('Agents','btagents');"><i class="fas fa-address-card"></i>Agents</a></li>
+            <li><a href="#Nominee"  id='btnomine' value='Show Layer' onclick="setVisibility('Nominee','btnomine');"><i class="fas fa-project-diagram"></i>Nominee</a></li>
+            <li><a href="#Payments"  id='btpayment' value='Show Layer' onclick="setVisibility('Payments','btpayment');"><i class="fas fa-user"></i>Payments</a></li>
+            
+        </ul>
+        
+    </div>
+    <div class="main_content">
+        <div class="header row">
+          <h2 class="col sticky-top">Welcome Admin</h2>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end col">
+           <a href="index.html" ><button class="btn btn-primary" type="button">LOGOUT</button></a>
+         </div>
+        </div>  
+        
+        <div id="Dashboard"class="info">
+          <div>
+            <h2>Notice:</h2>
+            <p>This wepages was created by 19UCS150<br>Reference by<br><ul class="dash"><li>google.com</li><li>bootstrap doc</li><li>stackoverflow</li><li>w3schools</li></ul></p>
+
+          </div>
+      </div>
+      <div id="Client" class="info">
+          <div>
+            <div class="row  align-items-start">
+              <div class="col-10">
+                <h2>Client information</h2>
+              </div>
+              <div class="col-2">
+		      <a href="#Addclient" ><button class="btn btn-primary">Add clients</button></a>
+              </div>
+          </div>
+            
+            <hr class="dashed">
+              <table class="table table-hover table-striped ">
+  <tr style="color: #0437f2;">
+    <th>CLIENT ID</th>
+    <th>NAME</th> 
+    <th>DOB</th>
+    <th>NID</th> 
+    <th>PHONE</th>
+    <th>ADDRESS</th>
+    <th>STATUS</th> 
+    <th>UPDATE</th>
+  </tr>
+  <tr>
+    <td>1511004401</td>
+    <td>JON</td>
+    <td>5/11/2006</td>
+    <td>0198725460</td>
+    <td>159753648214</td>
+    <td>INDIA</td>
+    <td><a href="#Client" >Client Status</td>
+    <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+  </tr>
+  <tr>
+    <td>1511004402</td>
+    <td>JACKSON</td>
+    <td>2/5/2008</td>
+    <td>3698521475</td>
+    <td>2587413699</td>
+    <td>ITALY</td>
+    <td><a href="#Client" >Client Status</td>
+    <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+  </tr>
+  <tr>
+    <td>1511004403</td>
+    <td>YOGAN</td>
+    <td>8/5/2007</td>
+    <td>963258741</td>
+    <td>74125896325</td>
+    <td>CHINA</td>
+    <td><a href="#Client" >Client Status</td>
+    <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+  </tr>
+ <tr>
+    <td>1511004404</td>
+    <td>JOHNSON</td>
+    <td>6/2/2000</td>
+    <td>80254394</td>
+    <td>0188453974</td>
+    <td>NEW YORK</td>
+    <td><a href="#Client" >Client Status</td>
+    <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+  </tr>
+ <tr>
+    <td>1511004405</td>
+    <td>JAVA</td>
+    <td>8/9/2004</td>
+    <td>4822157380</td>
+    <td>0155847</td>
+    <td>OKANDA</td>
+    <td><a href="#Client" >Client Status</td>
+    <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+  </tr>
+ 
+ 
+</table>
+          </div>
+      </div>
+      <div id="Addclient" class="info">
+        <div>
+          <h2>Add User</h2>
+          <form name="my-form" >
+            <div class="form-group row">
+                <label for="client id" class="col-md-4 col-form-label text-md-right">Client ID</label>
+                <div class="col-md-4">
+                    <input type="text" id="full_name" class="form-control" name="Client id" required
+                    >
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="Name" class="col-md-4 col-form-label text-md-right">Name</label>
+                <div class="col-md-4">
+                    <input type="text" id="email_address" class="form-control" name="name" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="dob" class="col-md-4 col-form-label text-md-right">DOB</label>
+                <div class="col-md-4">
+                    <input type="date" id="user_name" class="form-control" name="DOB" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="NID" class="col-md-4 col-form-label text-md-right">NID</label>
+                <div class="col-md-4">
+                    <input type="text" id="phone_number" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="phone" class="col-md-4 col-form-label text-md-right">Phone </label>
+                <div class="col-md-4">
+                    <input type="text" id="present_address" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Address</label>
+                <div class="col-md-4">
+                    <input type="text" id="permanent_address" class="form-control" name="permanent-address" required>
+                </div>
+            </div>
+            <div class="form-group row">
+              <label for="policy id" class="col-md-4 col-form-label text-md-right">policy id</label>
+              <div class="col-md-4">
+                  <input type="text" id="permanent_address" class="form-control" name="policy" required>
+              </div>
+          </div>
+          <div class="form-group row">
+            <label for="nomine id" class="col-md-4 col-form-label text-md-right">nominee id</label>
+            <div class="col-md-4">
+                <input type="text" id="permanent_address" class="form-control" name="nominee" required>
+            </div>
+        </div>
+ <div class="col-md-4 offset-md-4">
+                    <button type="submit" class="btn btn-primary">
+                    Register
+                    </button>
+                </div>
+            </div>
+        </form>
+        </div>
+    
+      <div id="Agents" class="info">
+          <div><div><h2>Agent information</h2>
+          </div><table class="table table-hover table-striped ">
+            <tr style="color: #0437f2;">
+              <th>AGENT ID</th>
+              <th>NAME</th> 
+              <th>DOB</th>
+              <th>NID</th> 
+              <th>PHONE</th>
+              <th>ADDRESS</th>
+              <th>STATUS</th> 
+           
+            </tr><tr>
+              <td>1511004411</td>
+              <td>JON</td>
+              <td>5/11/2006</td>
+              <td>0198725460</td>
+              <td>159753648214</td>
+              <td>INDIA</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+            <tr>
+              <td>1511004412</td>
+              <td>JACK</td>
+              <td>2/5/2008</td>
+              <td>3698521475</td>
+              <td>2587413699</td>
+              <td>ITALY</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+            <tr>
+              <td>1511004413</td>
+              <td>YOGAN</td>
+              <td>8/5/2007</td>
+              <td>963258741</td>
+              <td>74125896325</td>
+              <td>CHINA</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+           <tr>
+              <td>1511004414</td>
+              <td>DON MAAKU</td>
+              <td>6/2/2000</td>
+              <td>80254394</td>
+              <td>0188453974</td>
+              <td>NEW YORK</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+           <tr>
+              <td>1511004415</td>
+              <td>JAVAKU</td>
+              <td>8/9/2004</td>
+              <td>4822157380</td>
+              <td>0155847</td>
+              <td>OKANDA</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+           <tr>
+              <td>1511004416</td>
+              <td>DINISHKARTHI</td>
+              <td>10/8/1999</td>
+              <td>2566984</td>
+              <td>369147852469</td>
+              <td>INDIA</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+           <tr>
+              <td>1511004417</td>
+              <td>SHREENATH</td>
+              <td>2/2/2002</td>
+              <td>123651447895</td>
+              <td>3258741598</td>
+              <td>FRANCE</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+           <tr>
+              <td>1511004418</td>
+              <td>RAMKUMAR</td>
+              <td>30/4/1995</td>
+              <td>2589964</td>
+              <td>25416698</td>
+              <td>RUSSIA</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+           <tr>
+              <td>1511004419</td>
+              <td>NAVEEN RAJ</td>
+              <td>4/7/2002</td>
+              <td>15987554</td>
+              <td>25589964744</td>
+              <td>ROME</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+           <tr>
+              <td>1511004420</td>
+              <td>AKAASH</td>
+              <td>5/5/2005</td>
+              <td>25874</td>
+              <td>36974158289</td>
+              <td>INDIA</td>
+              <td><a href="#Agent" >Agent Status</td>
+               
+            </tr>
+          </table></div>
+          </div>
+       <div id="Nominee" class="info">
+          <div>
+            <h3>Nominee detials</h3>
+            <hr class="dashed">
+            <table class="table table-hover table-striped ">
+<tr style="color: #0437f2;">
+  <th>NOMINEE ID</th>
+  <th>NAME</th> 
+  <th>DOB</th>
+  <th>PHONE</th> 
+  <th>CLIENT ID</th>
+  <th>COUNTRY</th>
+  <th>STATUS</th> 
+  <th>EDIT</th>
+</tr>
+<tr>
+  <td>1511004401</td>
+  <td>JON</td>
+  <td>5/11/2006</td>
+  <td>0198725460</td>
+  <td>159753648214</td>
+  <td>INDIA</td>
+  <td><a href="#Client" >Client Status</td>
+  <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+</tr>
+<tr>
+  <td>1511004402</td>
+  <td>JACKSON</td>
+  <td>2/5/2008</td>
+  <td>3698521475</td>
+  <td>2587413699</td>
+  <td>ITALY</td>
+  <td><a href="#Client" >Client Status</td>
+  <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+</tr>
+<tr>
+  <td>1511004403</td>
+  <td>YOGAN</td>
+  <td>8/5/2007</td>
+  <td>963258741</td>
+  <td>74125896325</td>
+  <td>CHINA</td>
+  <td><a href="#Client" >Client Status</td>
+  <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+</tr>
+<tr>
+  <td>1511004404</td>
+  <td>JOHNSON</td>
+  <td>6/2/2000</td>
+  <td>80254394</td>
+  <td>0188453974</td>
+  <td>NEW YORK</td>
+  <td><a href="#Client" >Client Status</td>
+  <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+</tr>
+<tr>
+  <td>1511004405</td>
+  <td>JAVA</td>
+  <td>8/9/2004</td>
+  <td>4822157380</td>
+  <td>0155847</td>
+  <td>OKANDA</td>
+  <td><a href="#Client" >Client Status</td>
+  <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+</tr>
+            </table>  
+          </div>
+      </div>
+       <div id="Payments" class="info">
+          <div>
+            <h2>Payment information</h2>
+            <hr class="divider">
+            <table class="table table-hover table-striped ">
+              <tr style="color: #0437f2;">
+                <th>RECIPT NO</th>
+                <th>CLIENT ID</th>
+                <th>MONTH</th> 
+                <th>AMOUNT</th>
+                <th>DUE</th> 
+                <th>FINE</th> 
+                <th>UPDATE</th>
+              </tr>
+              <tr>
+                <td>4213_3124</td>
+                <td>1265</td>
+                <td>april</td>
+                <td>3500</td>
+                <td>0</td>
+                <td>0</td>
+                <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+              </tr>
+              <tr>
+                <td>5476_7645</td>
+                <td>1288</td>
+                <td>june</td>
+                <td>3500</td>
+                <td>0</td>
+                <td>0</td>
+                <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+              </tr>
+              <tr>
+                <td>4321_1234</td>
+                <td>1674</td>
+                <td>june</td>
+                <td>5000</td>
+                <td>0</td>
+                <td>500</td>
+                <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+              </tr>
+              <tr>
+                <td>9086_6089</td>
+                <td>1765</td>
+                <td>december</td>
+                <td>3000</td>
+                <td>0</td>
+                <td>0</td>
+                <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+              </tr>
+              <tr>
+                <td>7869_9689</td>
+                <td>2221</td>
+                <td>september</td>
+                <td>3500</td>
+                <td>0</td>
+                <td>0</td>
+                <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+              </tr>
+              <tr>
+                <td>1982_1289</td>
+                <td>2267</td>
+                <td>october</td>
+                <td>3800</td>
+                <td>0</td>
+                <td>500</td>
+                <td><button class="btn tbn"><i class="far fa-times-circle"></i></i></button><button class="btn"><i class="far fa-edit"></i></button></td>
+              </tr>
+             </table>
+          </div>
+      </div>
+    </div>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

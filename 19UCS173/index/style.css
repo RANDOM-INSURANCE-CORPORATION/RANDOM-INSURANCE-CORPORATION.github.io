@@ -1,0 +1,118 @@
+body
+{
+	color:darkgrey;
+	background-color:aliceblue;
+}
+
+
+h1.heading 
+{
+    font-size: 36px;
+    margin-top: 25px;
+    color: black;
+    text-align: center;
+    color: #253858;
+    letter-spacing: .2px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    background-color:aliceblue;
+    overflow: hidden;
+}
+
+h2.subheading 
+{
+    font-size: 18px;
+    color: black;
+    letter-spacing: .36px;
+    opacity: .6;
+    letter-spacing: .2px;
+    line-height: 22px;
+    text-align: center;
+    background-color:aliceblue;
+    overflow: hidden;
+}
+.booking-form
+{
+	padding: 0 20px 20px;
+	width: 900px;
+}
+.booking-form:label
+{
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.input::placeholder
+{
+	color: #fff;
+}
+
+.input-grp
+{
+	width: 160px;
+	display: inline-block;
+}
+
+.input-grpp
+{
+	width: 151px;
+	display: inline-block;
+}
+
+
+.form-control
+{
+	font-size: 12px;
+	border-radius: 0;
+	color: #fff;
+	background: ;
+}
+
+ .flight
+ {
+ 	width: 100%;
+ 	padding: 9px 0;
+ 	font-style: 12px;
+ 	border: 1px solid #ced4da;
+ 	background:aliceblue ;
+ 	border-radius: 0;
+ }
+
+.flight:hover
+{
+	background:#fff;
+	color: #000;
+	transition: 0.5s;
+}
+
+.fa-plane
+{
+	color:black;
+}
+
+.fa-map-marked-alt
+{
+	color: black;
+}
+
+.fa-plane-departure
+{
+	color: black;
+}
+
+.fa-plane-arrival
+{
+	color: black;
+}
+
+.fa-male
+{
+	color: black;
+}
+
+.fa-child
+{
+	color: black;
+}

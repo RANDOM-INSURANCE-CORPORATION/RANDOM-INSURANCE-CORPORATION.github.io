@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #f8f9fa;
+}
+
+#logo {
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2px;
+}
+
+.navbar ul{
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 12px 25px;
+}
+
+#menu a{
+    text-decoration: none;
+    text-align: center;
+    color: #aaaaaa;
+    padding: 5px 10px;
+}
+
+#menu a:hover{
+    color: black;
+}
+
+.intro {
+    width: 60%;
+    /*background-color: #e5e5e5;*/
+    height: 80vh;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 40px;
+    display: grid;
+    place-items: center;
+}
+
+
+.intro h1 {
+    font-family: 'Merriweather' , serif;
+    font-size: 60px;
+}
+
+.intro p {
+    font-family: 'Work Sans' , sans-serif;
+    font-size: 30px;
+}
+
+.types {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px 40px;
+    margin-top: 60px;
+}
+
+.types a {
+    text-decoration: none;
+    color: #aaaaaa;
+    padding: 10px 20px;
+    font-size: 40px;
+}
+
+.types a:hover{
+    color: black;
+}
+
+.partners {
+    margin-top: 20px;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.partners p {
+    font-family: 'Crimson Text' , serif;
+    font-style: italic;
+}
+
+.foot {
+    background-color: black;
+    color: #aaaaaa;
+    margin-bottom: 0%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.foot ul {
+    /*list-style-type: none;*/
+    text-align: center;
+}
+
+.foot li {
+    display: inline-block;
+    padding: 15px 10px;
+}
+
+.foot a{
+    text-decoration: none;
+    color: #aaaaaa;
+}
+
+.foot a:hover {
+    color: white;
+}
+
+.payments h3{
+    text-align: center;
+
+}
+
+.payments h3{
+    font-size: 20px;
+}
+
+.descp {
+    text-align: center;
+}

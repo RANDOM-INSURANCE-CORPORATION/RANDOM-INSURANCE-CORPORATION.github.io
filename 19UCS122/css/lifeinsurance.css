@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menubar {
+    width: 100%;
+    height: 80px;
+    background-color: #f8f9fa;
+}
+
+#logo {
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2px;
+}
+
+.menubar ul{
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+
+.menubar li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+#menu a{
+    text-decoration: none;
+    text-align: center;
+    color: #aaaaaa;
+    padding: 5px 10px;
+}
+
+#menu a:hover{
+    color: black;
+}
+
+p {
+    color: #001a66;
+    font-family: 'Crimson Text' , serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h2 , h3{
+    font-family: 'Crimson Text' , serif;
+    font-size: 30px;
+    color: #003566;
+}
+
+
+.intro , .page {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.brief h2{
+    font-size: 40px;
+}
+
+.brief p{
+    padding-bottom: 20px;
+}
+
+#sep {
+    color: #001a66;
+    font-family: 'Crimson Text' , serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#indent{
+    margin-left: 50px;
+}
+
+#indent p{
+    margin-left: 50px;
+}
+
+.intro h2 {
+    font-family: 'Crimson Text' , serif;
+    font-size: 30px;
+    color: #003566;
+}
+
+.intro p {
+    font-family: 'Crimson Text' , serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.features table{
+    border-collapse: collapse;
+    font-size: 1.5em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.features table th{
+    background-color:#2692D0;
+    color: white;
+    text-align: left;
+}
+
+.features table th ,
+.features table td{
+    padding: 12px 15px;
+}
+
+.features table tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.features table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.features table tr:last-of-type {
+    border-bottom: 2px solid #2692D0;
+}
+
+.bestinsurance table{
+    border-collapse: collapse;
+    font-size: 1.5em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.bestinsurance table th{
+    background-color:#2692D0;
+    color: white;
+    text-align: left;
+}
+
+.bestinsurance table th ,
+.bestinsurance table td{
+    padding: 12px 15px;
+}
+
+.bestinsurance table tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.bestinsurance table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.bestinsurance table tr:last-of-type {
+    border-bottom: 2px solid #2692D0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn button {
+    padding: 10px 12px;
+    font-size: 15px;
+    background-color: #2692D0;
+    color: #f3f3f3;
+    border-color: #2692D0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.foot {
+    background-color: black;
+    margin-bottom: 0%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.foot p {
+    color: #aaaaaa;
+}
+
+.foot ul {
+    /*list-style-type: none;*/
+    text-align: center;
+    color: #aaaaaa;
+}
+
+.foot li {
+    display: inline-block;
+    padding: 15px 10px;
+}
+
+.foot a{
+    text-decoration: none;
+    color: #aaaaaa;
+}
+
+.foot a:hover {
+    color: white;
+}
+
+.payments h3{
+    text-align: center;
+    color: #aaaaaa;
+
+}
+
+.payments h3{
+    font-size: 20px;
+}
+
+.descp {
+    text-align: center;
+    color: #aaaaaa;
+}

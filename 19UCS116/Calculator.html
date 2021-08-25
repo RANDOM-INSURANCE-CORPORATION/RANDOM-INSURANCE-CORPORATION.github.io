@@ -1,0 +1,307 @@
+
+
+
+<html>
+
+
+<head>
+<title>Life Insurance Calculator Script</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  border-radius: 5px;
+  background-color:#FDFEFE;  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 3px 18 px;
+}
+
+
+</style>
+<style> 
+
+div.a{
+  width: 100px;
+  height: 120px;
+  background: red;
+  transition: width 2s;
+  align:right;
+}
+div.a:hover 
+{
+  width: 300px;
+}
+@keyframes mymove {
+  0%   {left: 0px;}
+  25%  {left: -200px;}
+  50%  {left: 0px;}
+  75%  {left: 200px;}
+  100% {left: 0px;}
+}
+div.main {
+  width: 980px;
+  height: 90px;
+  border: 1px solid black;
+  display: flex;
+  
+  border-radius: 20px;
+  font-size: 48px;
+  border: 5px solid red;
+}
+ #blink {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+			background-color:yellow;
+            transition: -100s;
+        }
+
+body
+{
+	background-color:#FDFEFE;
+}
+
+h3
+{
+color:#0437F2;
+}
+
+/* span.ex1 { 
+  border: 5px solid red;
+  padding:  0em 1em;
+  border-radius: 16px;
+  font-size: 48px;
+  line-height: 2;
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+} */
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+</style>
+
+<body>
+
+<div id="calculator"   align=center>
+
+<br><br><br>
+
+<div class="w3-container">
+  <h5 style="color:red;">*19UCS116</h5>
+<div class="card"><span class="ex1"><font color="#0437F2" face="Arial"><h1>  <b> Life Insurance Monthly/Yearly Premium Payment Calculation</b></h1></font></span></div></div>
+<br>
+
+<br>
+<div class="card">
+<label>
+<form name=first>
+<table align=center border=0 cellpadding=1 cellspacing=1 id=tqe_calc>
+<tr><td colspan=2 align='center'> <div id='err_msg'></div> </td></tr>
+<tr><td align=left><font color="#0437F2" face="Arial">
+<h3><b>Current Age:<b></h3></font></td><td><input type=text id=age onkeyup=checnum(this)></td></tr>
+<tr><td colspan=2>
+</td></tr>
+<tr><td align=left><font color="#0437F2" face="Arial"><h3><b>Premium Payable:</b></h3></font></td><td><input type=text id=amount onkeyup=checnum(this)><br><br></td></tr>
+<tr><td>
+<label class="container"><input type=radio name=t value=Monthly><font color="#0437F2" face="Arial"><b>Monthly</b> </font><span class="checkmark"></span></label></td>
+<td>
+<label class="container"><input type=radio name=t value=Yearly checked><font color="#0437F2" face="Arial"><b>Yearly</b></font><span class="checkmark"></span></label></td></tr>
+<tr><td colspan=2>
+</td></tr>
+<tr><td align=left><font color="#0437F2" face="Arial"><h3><b>For policy term of:</b></h3></font></td><td></td>
+<div id=y>
+<td><label class="container"><input type=radio name=year value=15 checked><font color="#0437F2" face="Arial"><b>15-Year</b></font><span class="checkmark"></span></label></td>
+<td><label class="container"><input type=radio name=year value=20><font color="#0437F2" face="Arial"><b>20-Year</b> </font><span class="checkmark"></span></label></td>
+<td><label class="container"><input type=radio name=year value=25><font color="#0437F2" face="Arial"><b>25-year</b></font><span class="checkmark"></span></td></tr></div>
+<tr><td colspan=2>
+</td></tr>
+<tr><td align=center colspan=2> <input type=button class=btn btn-primary' value='Calculate' onclick=tqe_perc()><input type=reset class="btn btn-primary" value='Reset'> </td></tr>
+<tr><td colspan=2> <div align='center' style=" padding-left: 10px;font-size: 10px;color: #dadada;" id="dumdiv">
+</div></td></tr>
+<tr><td colspan=2>
+</td></tr>
+<tr><td align=left><font color="#0437F2" face="Arial"><h3><b>Fund Amount:</b></h3></font></td><td><input type=text id=r1></td></tr>
+<tr><td colspan=2>
+</td></tr>
+</table></form></label>
+</div>
+<br><div class="a"><h2 align="centre"><strong>New plan</strong></h2><blink><button id="blink">Click</button></blink><br><br>-19ucs116</div class="a"></div>
+</div class="bg-primary"></body>
+</div>
+</html>
+
+<script type="text/javascript">
+function checnum(as)
+{
+var a = as.value;
+for(var x=0; x<a.length; x++)
+{
+var ff = a[x];
+if(isNaN(a) || ff==" ")
+{
+a = a.substring(0,(a.length-1));
+as.value = a;
+}}}
+function getCheckedValue( groupName ) {
+var radios = document.getElementsByName( groupName );
+for( i = 0; i < radios.length; i++ ) {
+if( radios[i].checked ) {
+return radios[i].value;
+}
+}
+return null;
+}
+function tqe_perc()
+{
+var sds = document.getElementById("dum");
+
+var sdss = document.getElementById("dumdiv");
+
+if(sdss != null)
+{
+var totamount=0;
+var p1= document.getElementById("amount").value;
+var age1=document.getElementById("age").value;
+if(age1=="")
+document.getElementById("err_msg").innerHTML="<font color='red'><b>Enter the current age</b></font>";
+else if(p1=="")
+document.getElementById("err_msg").innerHTML="<font color='red'><b>Enter the premium payable</b></font>"
+else
+{
+document.getElementById("err_msg").innerHTML="";
+var p= parseFloat(p1);
+var age= parseFloat(age1);
+var y= parseFloat(getCheckedValue("year"));
+var t=getCheckedValue("t")
+if(p==""||age==""||y=="")
+{
+alert("enter the amount,interstand year");
+}
+else
+{
+if(t=="Yearly")
+{
+totamount=(y*p)+(y*500*41);
+document.getElementById("r1").value=totamount;
+}
+else
+{
+totamount=(p*12*y)+(y*500*41);
+document.getElementById("r1").value=totamount;
+}
+}
+}
+}
+}
+</script>
+<script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
+
