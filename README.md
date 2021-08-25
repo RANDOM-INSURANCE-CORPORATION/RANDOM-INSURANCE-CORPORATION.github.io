@@ -17,7 +17,7 @@ Group Member:
 	https://random-insurance-corporation.github.io/19UCS109.zip
 	
 19ucs116
-	https://random-insurance-corporation.github.io/19UCS116/calculator.html
+	https://random-insurance-corporation.github.io/19UCS116/index.html
 	
 19ucs122
 	https://random-insurance-corporation.github.io/19UCS122/html/index.html
@@ -26,7 +26,7 @@ Group Member:
 	https://random-insurance-corporation.github.io/19UCS132.zip
 	
 19ucs148
-	https://random-insurance-corporation.github.io/19UCS148/19ucs148.html
+	https://random-insurance-corporation.github.io/19UCS148/index.html
 	
 19ucs150
 	https://random-insurance-corporation.github.io/19UCS150/index.html
