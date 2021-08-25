@@ -15,3 +15,16 @@
 {
 	font-style: italic;
 }
+
+footer
+{
+text-align: center;
+  padding: 3px;
+  background-color: aliceblue;
+  color: black;
+}
+
+.fa-user-graduate
+{
+	color: black;
+}
