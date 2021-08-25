@@ -15,3 +15,15 @@
 	transition: 0.5s;
 }
 
+footer
+{
+text-align: center;
+  padding: 3px;
+  background-color: aliceblue;
+  color: black;
+}
+
+.fa-user-graduate
+{
+	color: black;
+}
