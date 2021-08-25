@@ -43,6 +43,7 @@ body{
 .wrapper .sidebar ul li a{
   background-color: transparent;
   text-decoration-line: none;
+  color: #FDFEFE;
   
 }
 a{
@@ -58,17 +59,23 @@ a{
 }
 
 .wrapper .sidebar ul li a .fas{
+  color: #FDFEFE;
   width: 25px;
   padding:  .5rem 0rem;
 }
 
 .wrapper .sidebar ul li:hover{
-  
-  color:#FDFEFE;
+  color: #0437f2;
+  background-color: #FDFEFE;
+  border-color: #FDFEFE;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 15px;
+
 }
     
 .wrapper .sidebar ul li:hover a{
-  color: #fff;
+  color: #0437f2;
+  
 }
  
 .wrapper .main_content{
@@ -123,6 +130,13 @@ table{
 .table-hover  tr:hover {
   background-color: #eeeeea;
   }
+
+.heartbeat{
+
+  width: 100px;
+  height: 100px;
+}
+
 #heart{
   color: #e0e4e8;
   margin-left: 3.5rem;
