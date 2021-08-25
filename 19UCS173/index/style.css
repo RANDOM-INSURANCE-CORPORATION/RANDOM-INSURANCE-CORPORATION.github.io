@@ -116,3 +116,16 @@ h2.subheading
 {
 	color: black;
 }
+
+footer
+{
+text-align: center;
+  padding: 3px;
+  background-color: aliceblue;
+  color: black;
+}
+
+.fa-user-graduate
+{
+	color: black;
+}
