@@ -14,7 +14,7 @@ Group Member:
 19ucs173
 
 19ucs109
-	https://random-insurance-corporation.github.io/19UCS109.zip
+	https://random-insurance-corporation.github.io/19UCS109/index.html
 	
 19ucs116
 	https://random-insurance-corporation.github.io/19UCS116/index.html
