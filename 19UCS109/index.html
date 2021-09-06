@@ -1,1 +1,137 @@
-<!doctype html><html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"> <link href="style.css" rel="stylesheet"> <title>AAA Insurance</title> <!-- Navbar--> <!-- Add picture of Virginia On The Left Side Of The Nav Bar Left of "AAA Insurance"--> <!-- Make Sure The Nav Bar Always Scrolls With User--> <!-- Move outside of "Container to get full width nav bar"--> <nav class="navbar navbar-expand-sm navbar-dark bg-primary navbar-static-top"> <!-- <a class="navbar-brand img-thumbnail rounded-circle img-fluid" href="#"><img src="virginiaJeep.jpg" height="50" alt="Virginia's Jeep"></a> --> <!-- <div class="container img-fluid col-sm-1"> --> <img src="virginiaJeep.jpg" class="col-sm-1 rounded-circle img-fluid float-left" alt="Virginia Insurance"> </div> <a class="navbar-brand" href="index.html">AAA Insurance</a> <div class="collapse navbar-collapse" id="navbarSupportedContent"> <div class="container row h-100 justify-content-center align-items-center"> <img src="orbit-logo.png" class="img-fluid" alt="AAA Insurance Logo"> </div> <ul class="navbar-nav ml-auto"> <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li> <div class="collapse navbar-collapse" id="navbarSupportedContent"> <ul class="navbar-nav ml-auto"> <li class="nav-item"> <a class="nav-link" href="#">Speak To Your Agent</a> </li> <li class="nav-item"> <!-- Link contact info here--> <!-- Create A Form With Click To Call And A Email Inquiry--> <a class="nav-link" href="requestAQuote.html">Request A Quote</a> </li> </ul> </div> </nav> <div class="container-fluid"> <div class="collapse navbar-collapse" id="navbarSupportedContent"> <ul class="navbar-nav ml-auto"> <li class="nav-item"> <a class="nav-link" href="#">Speak To Your Agent</a> </li> <li class="nav-item"> <!-- Link contact info here--> <!-- Create A Form With Click To Call And A Email Inquiry--> <a class="nav-link" href="requestAQuote.html">Request A Quote</a> </li> </ul> </div> </nav> </div> <!--Slideshow Picture Carousel Below Navbar On The Home Screen--> <!-- create a div to write text over the pictures if needed--> <div id="carouselIndicators" class="carousel slide container" data-ride="carousel"> <ol class="carousel-indicators"> <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li> <li data-target="#carouselIndicators" data-slide-to="1"></li> <li data-target="#carouselIndicators" data-slide-to="2"></li> </ol> <div class="carousel-inner container"> <div class="carousel-item active"> <img class="d-block w-100" src="beach1.jpg" alt="First slide"> </div> <div class="carousel-item"> <img class="d-block w-100" src="beach2.jpg" alt="Second slide"> </div> <div class="carousel-item"> <img class="d-block w-100" src="beach3.jpg" alt="Third slide"> </div> </div> <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div> <!-- Cards For Information 5x Cards Pull from AAA website / copy--> <div class="container mt-4"> <div class="card-deck"> <div class="card" style="width: 25rem;"> <div class="card-body"> <img class="fa" src="https://img.icons8.com/ios-filled/50/000000/tow-truck.png"> <h5>24/7 Roadside Assistance</h5> <p class="text-primary">We’ll be there if you need a tow or a jump start, lock your keys in your car, or get a flat tire</p> </div> </div> <div class="card" style="width: 25rem;"> <div class="card-body"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> <h5>Discounts</h5> <p class="text-primary">Members get exclusive savings on shopping, dining, entertainment, travel, and more </p> </div> </div> <div class="card" style="width: 25rem;"> <div class="card-body"> <i class="fa fa-wrench" aria-hidden="true"></i> <h5>Approved Auto Repair</h5> <p class="text-primary">Choose from AAA certified high-quality facilities for car maintenance and repairs </p> </div> </div> <div class="card" style="width: 25rem;"> <div class="card-body"> <i class="fa fa-calendar" aria-hidden="true"></i> <h5>Free identity theft protection</h5> <p class="text-primary">Safeguard your information with daily credit monitoring and lost wallet assistance4 </p> </div> </div> <div class="card" style="width: 25rem;"> <div class="card-body"> <i class="fa fa-plane" aria-hidden="true"></i> <h5>Travel</h5> <p class="text-primary">Full-service travel agency includes free TourBook® guides; U.S., Canada, Mexico maps and more</p> </div> </div> <div class="card" style="width: 25rem;"> <div class="card-body"> <i class="fa fa-home" aria-hidden="true"></i> <h5>Insurance</h5> <p class="text-primary">Comprehensive coverage that meets your auto, home, life, and other needs5 </p> </div> </div> </div> </div> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>template</title>
+    <style>
+        body {
+            background-color: #FDFEFE;
+            margin: 1px;
+
+            padding: 1px;
+        }
+        
+        .navbar {
+            width: 100%;
+            height: 50px;
+            background-color: #0437f2;
+        }
+        
+        
+        .navbar ul{
+            width: auto;
+            float: right;
+            margin-top: 8px;
+        }
+        
+        .navbar li{
+            display: inline-block;
+            padding: 12px 25px;
+        }
+        #menu a{
+            text-decoration: none;
+            text-align: center;
+            color: #FDFEFE;
+            padding: 5px 10px;
+        }
+        
+
+    </style>
+  </head>
+  <body >
+    <div class="navbar justify-content-md-end">
+        <ul id="menu">
+
+            
+            <li><a href="../../19UCS116/Calculator.html">Calculator</a></li>
+            <li><a href="../../19UCS148/19UCS148.html">Contact Us</a></li>
+            <li><a href="../../19UCS150/index.html">Login</a></li>
+        </ul>
+    </div><div>
+    &nbsp;
+      <h2>LIFE INSURANCE</h2>
+      <P>
+      life insurance is insurance on your life.
+      You buy life insurance to make sure your dependents are financially secured in the event of your untimely demise
+      Life insurance is particularly important if you are the sole breadwinner for your family or if your family is heavily reliant on your income
+      Under life insurance, the policyholder’s family is financially compensated in case the policyholder expires during the term of the term of the policy
+      </p>
+      <h2>HEALTH INSURANCE</h2>
+      <p> 
+      is bought to cover medical costs for expensive treatments
+      Different types of health insurance policies cover an array of diseases and ailments
+      You can buy a generic health insurance policy as well as policies for specific diseases
+      The premium paid towards a health insurance policy usually covers treatment,
+      hospitalization and medication costs
+      </p>
+      <h2>CAR INSURANCE</h2>
+      <p>
+      In today’s world, a car insurance is an important policy for every car owner
+      This insurance protects you against any untoward incident like accidents
+      Some policies also compensate for damages to your car during natural calamities like floods or earthquakes
+      It also covers third-party liability where you have to pay damages to other vehicle owners
+      </p>
+      <h2>EDUCATION INSURANCE</h2>
+      <p>
+      The child education insurance is akin to a life insurance policy which has been specially designed as a saving tool
+      An education insurance can be a great way to provide a lump sum amount of money when your child reaches the age for
+      higher education and gains entry into college (18 years and above)
+      This fund can then be used to pay for your child’s higher education expenses 
+      </p>
+      <h2>HOME INSURANCE</h2>
+      <p> 
+      We all dreaming of owning our own homes
+      Home insurance can help with covering loss or damage caused to your home due to accidents
+      like fire and other natural calamities or perils
+      Home insurance covers other instances like lightning, earthquakes etc
+      </p>
+      <table>
+      <THEAD><CENTER><h2>INSURANCE TYPES & BENIFITS</h2></CENTER></THEAD>
+      <tr>
+      <th>LIFE IINSURANCE</TH>
+      <TH>HEALTH INSURANCE</TH>
+      <TH>CAR INSURANCE</TH>
+      <TH>EDUCATION INSURANCE</TH>
+      <TH>HOME INSURANCE</TH>
+      </TR>
+      <TR>
+      <TD>INSURANCE PROTECTION</TD>
+      <TD>MAJORITY FOR PEOPLE</TD>
+      <TD>PROTECTION LOSS CAR</TD>
+      <TD>FUNDS TO STUDY</TD>
+      <TD>EXTENDED REPLACEMENT</TD>
+      </TR>
+      <TR>
+      <TD>CASH VALUE</TD>
+      <TD>FACILITIES&SERVICE</TD>
+      <TD>DEATH CLAIMS</TD>
+      <TD>FUTURE STUDY</TD>
+      <TD>REPLACEMENT COST</TD>
+      </TR>
+      <TR>
+      <TD>EXPENSIVE TO OWN</TD>
+      <TD>COEFFECTIVE PRICE</TD>
+      <TD>INDEMNITY LIMIT 7LAKHS</TD>
+      <TD>LIFE STUDY FUND</TD>
+      <TD>ACTUAL VALUE CASH</TD>
+      </TR>
+      </TABLE>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>
