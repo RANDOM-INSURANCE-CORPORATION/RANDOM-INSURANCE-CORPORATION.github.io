@@ -23,8 +23,7 @@ Group Member:
 	https://random-insurance-corporation.github.io/19UCS122/html/index.html
 	
 18ucs132
-	https://random-insurance-corporation.github.io/19UCS132.zip
-	
+	https://random-insurance-corporation.github.io/19UCS132/index.html	
 19ucs148
 	https://random-insurance-corporation.github.io/19UCS148/index.html
 	
